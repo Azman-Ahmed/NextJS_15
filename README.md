@@ -25,9 +25,7 @@
 
 ## Project Control Flow After Running
 
-1. **package.json** → `dev` command
-2. **layout.tsx** → `rootLayout` (defines the main layout structure)
-3. **app/page.tsx** → Main content rendering for the root route
+1. **package.json** → `dev` command → **layout.tsx** → `rootLayout` (defines the main layout structure) → **app/page.tsx** → Main content rendering for the root route
 
 ---
 
