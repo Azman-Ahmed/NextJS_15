@@ -98,4 +98,94 @@ With **SSR**, it works differently:
 - **SSR**: The server sends the **ready-to-view page**.
 - **CSR**: The browser gets an empty page and **loads the content after**.
 
+## Routing in Next.js
 
+Next.js uses a **file-based routing system** where the folder structure within the `app` directory defines the URL paths of the application.
+
+---
+
+### Dynamic Routing
+
+Dynamic routing in Next.js allows creating routes with variable segments, such as product pages for different product IDs.
+
+**Example Structure:**
+
+- `app`
+  - `product`
+    - `[productid]`
+      - `page.tsx`
+
+Here, `[productid]` is a **dynamic route** folder. The `page.tsx` file inside this folder dynamically handles URLs like `/product/1`, `/product/2`, etc., based on the `productid` parameter.
+
+**Example Code:**
+
+```typescript
+const ProductId = ({ params }: { params: { productid: string } }) => (
+    <h1>Detail of Product {params.productid}</h1>
+);
+
+export default ProductId;
+In this component, ProductId takes params.productid as a prop, allowing you to display the productid value from the URL.
+
+Nested Dynamic Routing
+Nested dynamic routing lets you create multiple layers of dynamic routes, such as a documentation section with features and specific concepts.
+
+Example Structure:
+
+app
+docs
+[feature]
+[concept]
+page.tsx
+In this setup, both [feature] and [concept] are dynamic segments, enabling URLs like /docs/feature1/concept1 or /docs/feature2/concept2. Each page.tsx file can access these URL segments as parameters.
+
+Example Code:
+
+typescript
+Copy code
+const Feature = ({ params }: { params: { feature: string; concept: string } }) => (
+    <h1>Detail of {params.feature} - {params.concept}</h1>
+);
+
+export default Feature;
+This component takes params.feature and params.concept from the URL, allowing it to display content dynamically based on both parameters.
+
+Summary
+Dynamic Routing: Use [foldername] to represent a dynamic route, creating parameterized URLs.
+Nested Dynamic Routing: Combine multiple [foldername] levels for multi-level dynamic routes, enabling detailed path structures.
+arduino
+Copy code
+
+This version avoids any mention of "bash" or command-line style formatting. Let me know if you need fur
+
+
+
+
+  
+
+
+app
+|-- page.tsx
+|-- about
+    |-- page.tsx
+|-- Education
+    |--page.tsx
+    |-- SSC
+        |-- page.tsx
+    |-- HSC
+        |-- page.tsx
+    |-- BSc
+        |-- page.tsx
+|   |-- docs
+        |--feature1
+            |--concept1
+            |--concept1
+            |--concept1
+        |--feature2
+            |--concept1
+            |--concept2
+            |--concept3
+        |--feature3
+            |--concept1
+            |--concept2
+            |--concept3
