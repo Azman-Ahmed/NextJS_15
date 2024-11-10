@@ -153,18 +153,7 @@ export default Feature;
 ```
 This component takes params.feature and params.concept from the URL, allowing it to display content dynamically based on both parameters.
 
-Summary
-Dynamic Routing: Use [foldername] to represent a dynamic route, creating parameterized URLs.
-Nested Dynamic Routing: Combine multiple [foldername] levels for multi-level dynamic routes, enabling detailed path structures.
-arduino
-Copy code
 
-This version avoids any mention of "bash" or command-line style formatting. Let me know if you need fur
-
-
-
-
-  
 
 
 app
