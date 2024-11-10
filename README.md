@@ -219,12 +219,12 @@ Imagine you have three folders spread across your project like this:
 
 
 app
-  task1
-    page.tsx
-  task2
-    page.tsx
-  task3
-    page.tsx
+  - task1
+    - page.tsx
+  - task2
+    - page.tsx
+  - task3
+    - page.tsx
 
 
 While this structure works, it can become challenging to quickly find or organize related tasks.
@@ -234,9 +234,9 @@ While this structure works, it can become challenging to quickly find or organiz
 To make things easier, you can group these folders into a single parent folder. However, the problem is that if you simply create a new folder, its name will show up in the URL. For example:
 
 
-/tasks/task1
-/tasks/task2
-/tasks/task3
+- /tasks/task1
+- /tasks/task2
+- /tasks/task3
 
 
 In some cases, you might not want the name of this parent folder (e.g., `tasks`) to appear in the URL.
@@ -251,13 +251,13 @@ Let's say you want to group the three task folders under one parent folder calle
 
 
 app
-  (tasks)
-    task1
-      page.tsx
-    task2
-      page.tsx
-    task3
-      page.tsx
+  - (tasks)
+    - task1
+      - page.tsx
+    - task2
+      - page.tsx
+    - task3
+      - page.tsx
 
 
 With this structure:
