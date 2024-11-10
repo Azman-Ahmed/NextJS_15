@@ -209,4 +209,65 @@ To include an underscore in a URL, use `%5f`.
 This setup keeps implementation details private while allowing flexibility in URL structure.
 
 
-## Route groups
+## Route Groups in Next.js
+
+When working on a project with a team, you might have multiple folders scattered throughout the `app` folder that handle different sub-tasks. This can become confusing, especially when trying to locate the specific folder you're working with.
+
+### Problem: Scattered Sub-Task Folders
+
+Imagine you have three folders spread across your project like this:
+
+
+app
+  task1
+    page.tsx
+  task2
+    page.tsx
+  task3
+    page.tsx
+
+
+While this structure works, it can become challenging to quickly find or organize related tasks.
+
+### Solution: Grouping Related Folders
+
+To make things easier, you can group these folders into a single parent folder. However, the problem is that if you simply create a new folder, its name will show up in the URL. For example:
+
+
+/tasks/task1
+/tasks/task2
+/tasks/task3
+
+
+In some cases, you might not want the name of this parent folder (e.g., `tasks`) to appear in the URL.
+
+### How to Solve This: Route Groups
+
+To **group** your related sub-task folders **without** making the parent folder appear in the URL, use the **route group** feature. In Next.js, you can create a route group by using **parentheses** around the folder name.
+
+**Example:**
+
+Let's say you want to group the three task folders under one parent folder called `tasks`, but you don’t want `tasks` to show up in the URL. Here's how you can structure your project:
+
+
+app
+  (tasks)
+    task1
+      page.tsx
+    task2
+      page.tsx
+    task3
+      page.tsx
+
+
+With this structure:
+
+- **URL**: The route paths for `task1`, `task2`, and `task3` will still be `/task1`, `/task2`, and `/task3`, but the parent folder `tasks` will be **invisible** in the URL.
+  
+This is useful for organizing related files without making the folder names part of the URL.
+
+### Key Takeaway:
+
+- **Route groups** are a way to **organize** related folders under a parent folder without including the parent folder’s name in the URL.
+- Use **parentheses** around the folder name (e.g., `(tasks)`) to make it a **route group**.
+
