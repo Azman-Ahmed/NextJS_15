@@ -125,6 +125,7 @@ const ProductId = ({ params }: { params: { productid: string } }) => (
 );
 
 export default ProductId;
+```
 In this component, ProductId takes params.productid as a prop, allowing you to display the productid value from the URL.
 
 Nested Dynamic Routing
@@ -133,21 +134,23 @@ Nested dynamic routing lets you create multiple layers of dynamic routes, such a
 Example Structure:
 
 app
-docs
-[feature]
-[concept]
-page.tsx
+- docs
+  - [feature]
+    - [concept]
+      - page.tsx
+      - 
 In this setup, both [feature] and [concept] are dynamic segments, enabling URLs like /docs/feature1/concept1 or /docs/feature2/concept2. Each page.tsx file can access these URL segments as parameters.
 
 Example Code:
 
-typescript
+```typescript
 Copy code
 const Feature = ({ params }: { params: { feature: string; concept: string } }) => (
     <h1>Detail of {params.feature} - {params.concept}</h1>
 );
 
 export default Feature;
+```
 This component takes params.feature and params.concept from the URL, allowing it to display content dynamically based on both parameters.
 
 Summary
