@@ -155,29 +155,26 @@ This component takes params.feature and params.concept from the URL, allowing it
 
 
 
-
+Routing example
 app
-|-- page.tsx
-|-- about
-    |-- page.tsx
-|-- Education
-    |--page.tsx
-    |-- SSC
-        |-- page.tsx
-    |-- HSC
-        |-- page.tsx
-    |-- BSc
-        |-- page.tsx
-|   |-- docs
-        |--feature1
-            |--concept1
-            |--concept1
-            |--concept1
-        |--feature2
-            |--concept1
-            |--concept2
-            |--concept3
-        |--feature3
-            |--concept1
-            |--concept2
-            |--concept3
+  - page.tsx []
+  - about
+    - page.tsx
+  - Education
+    - SSC
+      - page.tsx
+    - HSC
+      - page.tsx
+    - BSC
+        - page.tsx
+    - Docs
+      - feature1
+        - concept1
+        - concept2
+      - featuer2
+        - concept1
+        - concept2
+      - feature3
+        - concept1
+        - concept2
+      
