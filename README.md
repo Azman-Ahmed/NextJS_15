@@ -321,5 +321,27 @@ export default page;
 
 
 ## Using useRouter hook (Client side)
+
+The useRouter hook allows you to programmatically change routes from Client Components.
+
+```bash
+"use client";
+import { useRouter } from "next/navigation";
+const page = () => {
+    const router = useRouter();
+    const handleClick = () => {
+        console.log("Order Confirmed");
+        router.push("/")
+    };
+    return (
+        <div>
+        <button onClick={handleClick}>Place Order</button>
+        </div>
+    );
+};
+
+export default page;
+```
+
 ## Using redirect (Server Side)
 ## Native History API
