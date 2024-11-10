@@ -24,14 +24,14 @@
 
 1. **Download and Install Node.js**
 2. **Create a New Next.js App**: Run 
-   <!-- ``bash
+   ``bash
    npx create-next-app@latest playground
-   `` -->
+   ``
 3. **Project Setup Options**: Select features like TypeScript, ESLint, and Tailwind CSS as needed.
 4. **Run the Project**:
-   <!-- ``bash
+   ``bash
    npm run dev
-   `` -->
+   ``
 
 ---
 
@@ -113,24 +113,24 @@ Dynamic routing in Next.js enables routes with variable segments, such as produc
 
 **Example Structure:**
 
-<!-- ```
+```
 app
   product
     [productid]
       page.tsx
-``` -->
+```
 
 Here, `[productid]` is a **dynamic route** folder, handling URLs like `/product/1`, `/product/2`, based on `productid`.
 
 **Example Code:**
 
-<!-- ``typescript
+``typescript
 const ProductId = ({ params }: { params: { productid: string } }) => (
     <h1>Detail of Product {params.productid}</h1>
 );
 
 export default ProductId;
-``` -->
+```
 
 This `ProductId` component uses `params.productid` to display a value from the URL.
 
@@ -142,25 +142,25 @@ Nested dynamic routing creates multiple layers of dynamic routes, like a documen
 
 **Example Structure**:
 
-<!-- ``bash
+``bash
 app
   docs
     [feature]
       [concept]
         page.tsx
-``` -->
+```
 
 With both `[feature]` and `[concept]` as dynamic segments, this setup enables URLs like `/docs/feature1/concept1`.
 
 **Example Code:**
 
-<!-- ``typescript
+``typescript
 const Feature = ({ params }: { params: { feature: string; concept: string } }) => (
     <h1>Detail of {params.feature} - {params.concept}</h1>
 );
 
 export default Feature;
-``` -->
+```
 
 This `Feature` component displays content based on both `feature` and `concept` parameters.
 
@@ -172,13 +172,13 @@ This `Feature` component displays content based on both `feature` and `concept` 
 
 **Example Structure:**
 
-<!-- ``bash
+``bash
 app
   about
     page.tsx         # Main code for the About page
     AboutStyles.css  # Styles specific to the About page
     AboutHelper.js   # Helper functions for the About page
-``` -->
+```
 
 **Benefits**:
 - **Easier Maintenance**: Related code in one spot.
@@ -190,11 +190,11 @@ app
 
 Create private folders by prefixing them with an underscore (`_`), making them internal details not recognized by the routing system.
 
-<!-- ``bash
+``bash
 app
   _component
     page.tsx  # Ignored as a route
-``` -->
+```
 
 In this example, `_component` and its contents are ignored by the Next.js routing system, so `page.tsx` inside `_component` is not accessible as a route.
 
