@@ -103,7 +103,7 @@ With **SSR**:
 
 ---
 
-## Routing in Next.js
+# Routing in Next.js
 
 Next.js uses a **file-based routing system** where the folder structure within the `app` directory defines the application URL paths.
 
