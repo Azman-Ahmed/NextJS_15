@@ -49,9 +49,9 @@ After running a Next.js project, the flow typically follows this sequence:
 
 ---
 
-## SSR vs CSR in Next.js
+# SSR vs CSR in Next.js
 
-### What is CSR (Client-Side Rendering)?
+## What is CSR (Client-Side Rendering)?
 
 With **CSR**:
 
@@ -59,13 +59,13 @@ With **CSR**:
 2. The browser loads an empty page first, then requests data from the server to fill the content.
 3. **Example**: Like a mobile app that displays a loading screen while data loads.
 
-### When to use CSR:
+## When to use CSR:
 - **Good for interactive sites** where users frequently interact with the page (e.g., social media).
 - Provides smooth and responsive experiences after the page fully loads.
 
 ---
 
-### What is SSR (Server-Side Rendering)?
+## What is SSR (Server-Side Rendering)?
 
 With **SSR**:
 
@@ -77,7 +77,7 @@ With **SSR**:
 
 ---
 
-### Key Differences Between SSR and CSR
+## Key Differences Between SSR and CSR
 
 | **Feature**                | **SSR (Server-Side Rendering)**                  | **CSR (Client-Side Rendering)**                     |
 |----------------------------|--------------------------------------------------|-----------------------------------------------------|
@@ -89,7 +89,7 @@ With **SSR**:
 
 ---
 
-### SSR and CSR in Next.js
+## SSR and CSR in Next.js
 
 - **SSR**: Use `getServerSideProps` to fetch data **before** sending to the browser.
 - **CSR**: Use **React** features like `useEffect` to fetch data **after** the page loads.
