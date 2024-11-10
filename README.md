@@ -72,7 +72,7 @@ With **SSR**:
 1. The server sends the complete page, already filled with content, before it reaches the browser.
 2. **Example**: Like ordering a pizza that’s ready to eat when it arrives.
 
-### When to use SSR:
+## When to use SSR
 - **Great for static sites** like blogs or product pages where faster initial load times are beneficial.
 
 ---
