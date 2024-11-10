@@ -1,6 +1,6 @@
 # Next.js Notes
 
-## Why Learn Next.js
+# Why Learn Next.js
 
 1. **File-Based Routing**: Simplifies routing based on file structure.
 2. **API Routes**: Allows backend endpoints directly in the project.
@@ -12,7 +12,7 @@
 
 ---
 
-## Prerequisites
+# Prerequisites
 
 1. **HTML, CSS, and JavaScript Fundamentals**
 2. **ES6 Knowledge**: Familiarity with `let`, `const`, arrow functions, etc.
@@ -20,7 +20,7 @@
 
 ---
 
-## Setting Up a Next.js Project
+# Setting Up a Next.js Project
 
 1. **Download and Install Node.js**
 2. **Create a New Next.js App**: Run 
@@ -35,7 +35,7 @@
 
 ---
 
-## Project Control Flow
+# Project Control Flow
 
 After running a Next.js project, the flow typically follows this sequence:
 
@@ -43,15 +43,15 @@ After running a Next.js project, the flow typically follows this sequence:
 
 ---
 
-## Key Topic to Learn
+# Key Topic to Learn
 
 - **React Server Components (RSC)**
 
 ---
 
-# SSR vs CSR in Next.js
+## SSR vs CSR in Next.js
 
-## What is CSR (Client-Side Rendering)?
+### What is CSR (Client-Side Rendering)?
 
 With **CSR**:
 
@@ -65,7 +65,7 @@ With **CSR**:
 
 ---
 
-## What is SSR (Server-Side Rendering)?
+### What is SSR (Server-Side Rendering)?
 
 With **SSR**:
 
@@ -77,7 +77,7 @@ With **SSR**:
 
 ---
 
-## Key Differences Between SSR and CSR
+### Key Differences Between SSR and CSR
 
 | **Feature**                | **SSR (Server-Side Rendering)**                  | **CSR (Client-Side Rendering)**                     |
 |----------------------------|--------------------------------------------------|-----------------------------------------------------|
@@ -89,7 +89,7 @@ With **SSR**:
 
 ---
 
-## SSR and CSR in Next.js
+### SSR and CSR in Next.js
 
 - **SSR**: Use `getServerSideProps` to fetch data **before** sending to the browser.
 - **CSR**: Use **React** features like `useEffect` to fetch data **after** the page loads.
@@ -107,7 +107,7 @@ With **SSR**:
 
 Next.js uses a **file-based routing system** where the folder structure within the `app` directory defines the application URL paths.
 
-### Dynamic Routing
+## Dynamic Routing
 
 Dynamic routing in Next.js enables routes with variable segments, such as product pages for different product IDs.
 
@@ -136,7 +136,7 @@ This `ProductId` component uses `params.productid` to display a value from the U
 
 ---
 
-### Nested Dynamic Routing
+## Nested Dynamic Routing
 
 Nested dynamic routing creates multiple layers of dynamic routes, like a documentation section with features and specific concepts.
 
