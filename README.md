@@ -177,4 +177,31 @@ app
       - feature3
         - concept1
         - concept2
-      
+
+
+### Colocation
+### private folders
+
+Private folders can be created by prefixing a folder with an underscore: _folderName
+
+This indicates the folder is a private implementation detail and should not be considered by the routing system, thereby opting the folder and all its subfolders out of routing.
+
+```bash
+app
+  - _component
+    - page.tsx (Not accessible even though it is a page.tsx file)
+```
+
+In this example, `_component` and its contents are ignored by the Next.js routing system, so `page.tsx` inside `_component` is not accessible as a route.
+
+---
+
+### Adding an Underscore in URLs
+
+If you need to include an underscore in a URL, you can use the URL-encoded form of the underscore character, which is `%5f`.
+
+**Example:** `/my%5fpage` translates to `/my_page` in the URL.
+
+---
+
+This setup helps in keeping implementation details private while still allowing flexibility in URL structure when needed.
