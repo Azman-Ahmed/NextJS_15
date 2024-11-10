@@ -275,5 +275,5 @@ https://nextjs.org/docs/app/building-your-application/routing/layouts-and-templa
 
 gap topic: route group layout, routing metadata, title metadata
 
-## Linking and Navigating
+# Linking and Navigating
 
