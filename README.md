@@ -271,5 +271,9 @@ This is useful for organizing related files without making the folder names part
 - Use **parentheses** around the folder name (e.g., `(tasks)`) to make it a **route group**.
 
 ## Layout and template
-
 https://nextjs.org/docs/app/building-your-application/routing/layouts-and-templates
+
+gap topic: route group layout, routing metadata, title metadata
+
+## Linking and Navigating
+
