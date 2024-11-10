@@ -277,3 +277,23 @@ gap topic: route group layout, routing metadata, title metadata
 
 # Linking and Navigating
 
+## Using Link Component
+import Link component file and refer the path you want to go to
+
+```bash
+import Link from "next/link";
+export default function Home() {
+  return (
+    <>
+      <h1>Home</h1>
+      <Link href="/product">product</Link>
+    </>
+  );
+}
+
+```
+
+
+## Using useRouter hook (Client side)
+## Using redirect (Server Side)
+## Native History API
