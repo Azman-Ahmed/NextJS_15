@@ -180,6 +180,31 @@ app
 
 
 ### Colocation
+
+**Colocation** is a way to organize your project files so that components, styles, and other code are grouped together close to where they’re used.
+
+In Next.js, colocation means keeping related files in the same folder as the pages or components that use them. This keeps your code organized and makes it easy to find everything related to a specific page or component in one place.
+
+For example, if you have a page called `About`, you might structure it like this:
+
+```bash
+app
+  - about
+    - page.tsx (main code for the About page)
+      - AboutStyles.css (styles specific to the About page)
+        - AboutHelper.js (extra helper functions for the About page)
+```
+By keeping everything in one folder, you can quickly see all the code related to `About` without searching through different parts of the project.
+
+**Why Colocate?**
+
+- **Easier to Maintain**: All related code is in one spot, so you don’t need to look in multiple places.
+- **Better Organization**: Your project structure is clean, especially as it grows.
+
+Colocation is all about making development simpler by grouping related files together!
+
+
+
 ### private folders
 
 Private folders can be created by prefixing a folder with an underscore: _folderName
