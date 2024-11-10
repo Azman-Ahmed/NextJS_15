@@ -266,8 +266,10 @@ With this structure:
   
 This is useful for organizing related files without making the folder names part of the URL.
 
-### Key Takeaway:
 
 - **Route groups** are a way to **organize** related folders under a parent folder without including the parent folder’s name in the URL.
 - Use **parentheses** around the folder name (e.g., `(tasks)`) to make it a **route group**.
 
+## Layout and template
+
+https://nextjs.org/docs/app/building-your-application/routing/layouts-and-templates
