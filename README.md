@@ -107,6 +107,8 @@ With **SSR**:
 
 Next.js uses a **file-based routing system** where the folder structure within the `app` directory defines the application URL paths.
 
+## Layout and Templates
+
 ## Dynamic Routing
 
 Dynamic routing in Next.js enables routes with variable segments, such as product pages for different product IDs.
