@@ -200,7 +200,7 @@ In this example, `_component` and its contents are ignored by the Next.js routin
 
 ---
 
-## Underscores in URLs
+### Underscores in URLs
 
 To include an underscore in a URL, use `%5f`.
 
